@@ -24,7 +24,7 @@ const FileUploaderForm = () => {
     // Apply font style when selectedFiles change
     if (selectedFiles.length > 0) {
       // Fetch font info from PHP
-      fetch('http://localhost/IXP-task1/font-uploader-and-grouping/backend/api/upload-font.php', {
+      fetch('api/upload-font.php', {
         method: 'POST',
         headers:{
           'Content-Type': 'application/json; charset=UTF-8'
